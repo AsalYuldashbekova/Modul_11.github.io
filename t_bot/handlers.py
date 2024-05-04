@@ -1,9 +1,10 @@
 from aiogram import Dispatcher, types
 from aiogram.filters import CommandStart
+from keyboards import app_ikb
 
 dp = Dispatcher()
 
 
 @dp.message(CommandStart())
 async def start(message: types.Message):
-    await message.answer("Salom")
+    await message.answer("Salom", reply_markup=app_ikb)
