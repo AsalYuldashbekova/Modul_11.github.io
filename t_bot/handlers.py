@@ -1,4 +1,4 @@
-from aiogram import Dispatcher, types
+from aiogram import Dispatcher, types, F
 from aiogram.filters import CommandStart
 from keyboards import app_ikb
 
