@@ -15,22 +15,22 @@ let item = " "
 
 
 btn1.addEventListener("click", function () {
-    tg.MainButton.setText("btn1 bosildi");
+    tg.MainButton.setText("Burger tanlandi");
     item = "button1 bosildi";
     tg.MainButton.show();
 });
 btn2.addEventListener("click", function () {
-    tg.MainButton.setText("btn2 bosildi");
+    tg.MainButton.setText("KFS tanlandi");
     item = "button2 bosildi";
     tg.MainButton.show();
 });
 btn3.addEventListener("click", function () {
-    tg.MainButton.setText("btn3 bosildi");
+    tg.MainButton.setText("Lavash tanlandi");
     item = "button3 bosildi";
     tg.MainButton.show();
 });
 btn4.addEventListener("click", function () {
-    tg.MainButton.setText("btn4 bosildi");
+    tg.MainButton.setText("Pizza tanlandi");
     item = "button4 bosildi";
 
     tg.MainButton.show();
