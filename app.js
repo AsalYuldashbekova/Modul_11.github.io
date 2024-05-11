@@ -16,22 +16,22 @@ let item = " "
 
 btn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger");
-    item = "Burger 3$";
+    item = "Burger /3$";
     tg.MainButton.show();
 });
 btn2.addEventListener("click", function () {
     tg.MainButton.setText("KFS");
-    item = "KFS 5$";
+    item = "KFS /5$";
     tg.MainButton.show();
 });
 btn3.addEventListener("click", function () {
     tg.MainButton.setText("Lavash");
-    item = "Lavash 4$";
+    item = "Lavash /4$";
     tg.MainButton.show();
 });
 btn4.addEventListener("click", function () {
     tg.MainButton.setText("Pizza");
-    item = "Pizza 6$";
+    item = "Pizza /6$";
 
     tg.MainButton.show();
 });
