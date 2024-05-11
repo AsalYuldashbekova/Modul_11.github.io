@@ -17,55 +17,63 @@ let rbtn4 = document.getElementById("rbtn4");
 let abtn4 = document.getElementById("abtn4");
 
 let item = " "
-let num_count = 0
+let n_count1 = 0
+let n_count2 = 0
+let n_count3 = 0
+let n_count4 = 0
+
+count1 = document.getElementById("count1")
+count2 = document.getElementById("count2")
+count3 = document.getElementById("count3")
+count4 = document.getElementById("count4")
 
 number = document.getElementById("count");
 
 abtn1.addEventListener("click", function () {
 
-    number.innerText = num_count += 1;
-    number.style.display = "block";
+    number.innerText = n_count1 + 1;
+    number.style.display = "inline-block";
 })
 
-abtn1.addEventListener("click", function () {
+rbtn1.addEventListener("click", function () {
 
-    number.innerText = num_count -= 1;
-    number.style.display = "block";
-})
-
-abtn2.addEventListener("click", function () {
-
-    number.innerText = num_count += 1;
+    number.innerText = n_count1 - 1;
     number.style.display = "block";
 })
 
 abtn2.addEventListener("click", function () {
 
-    number.innerText = num_count -= 1;
+    number.innerText = n_count2 + 1;
+    number.style.display = "block";
+})
+
+abtn2.addEventListener("click", function () {
+
+    number.innerText = n_count2 - 1;
     number.style.display = "block";
 })
 
 abtn3.addEventListener("click", function () {
 
-    number.innerText = num_count += 1;
+    number.innerText = n_count3 + 1;
     number.style.display = "block";
 })
 
 abtn3.addEventListener("click", function () {
 
-    number.innerText = num_count -= 1;
+    number.innerText = n_count3 - 1;
     number.style.display = "block";
 })
 
 abtn4.addEventListener("click", function () {
 
-    number.innerText = num_count += 1;
+    number.innerText = n_count4 + 1;
     number.style.display = "block";
 })
 
 abtn4.addEventListener("click", function () {
 
-    number.innerText = num_count -= 1;
+    number.innerText = n_count4 - 1;
     number.style.display = "block";
 })
 btn1.addEventListener("click", function () {
