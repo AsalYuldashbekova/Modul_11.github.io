@@ -27,7 +27,47 @@ abtn1.addEventListener("click", function () {
     number.style.display = "block";
 })
 
+abtn1.addEventListener("click", function () {
 
+    number.innerText = num_count -= 1;
+    number.style.display = "block";
+})
+
+abtn2.addEventListener("click", function () {
+
+    number.innerText = num_count += 1;
+    number.style.display = "block";
+})
+
+abtn2.addEventListener("click", function () {
+
+    number.innerText = num_count -= 1;
+    number.style.display = "block";
+})
+
+abtn3.addEventListener("click", function () {
+
+    number.innerText = num_count += 1;
+    number.style.display = "block";
+})
+
+abtn3.addEventListener("click", function () {
+
+    number.innerText = num_count -= 1;
+    number.style.display = "block";
+})
+
+abtn4.addEventListener("click", function () {
+
+    number.innerText = num_count += 1;
+    number.style.display = "block";
+})
+
+abtn4.addEventListener("click", function () {
+
+    number.innerText = num_count -= 1;
+    number.style.display = "block";
+})
 btn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger " + num);
     item = "Burger/3$";
