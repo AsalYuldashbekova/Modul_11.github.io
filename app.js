@@ -33,82 +33,87 @@ rbtn1.addEventListener("click", function () {
 });
 // ------------------2--------------------
 
+let item2 = " "
+let n_count2 = 0
+
+
 count2 = document.getElementById("count2");
-rbtn2 = document.getElementById("rbtn2");
-abtn2 = document.getElementById("abtn2");
-let item2 = " ";
-let n_count2 = 0;
+let rbtn2 = document.getElementById("rbtn2");
+let abtn2 = document.getElementById("abtn2");
+
+abtn2.addEventListener("click", function () {
+    count2.innerText = n_count2 += 1;
+    count2.style.display = "inline-block";
+    tg.MainButton.setText("KFS");
+    tg.MainButton.show();
+    item2 = "KFS/3/" + count2.innerText;
+
+});
 rbtn2.addEventListener("click", function () {
     if (n_count2 > 0) {
         count2.innerText = n_count2 -= 1;
     }
-
     count2.style.display = "inline-block";
-    tg.MainButton.setText("KFC");
-    tg.MainButton.show();
-});
-
-
-
-abtn2.addEventListener("click", function (){
-    count2.innerText = n_count2 += 1;
-    count2.style.display = "inline-block";
-    tg.MainButton.setText("KFC");
+    item2 = "KFS/3/" + count2;
+    tg.MainButton.setText("KFS");
     tg.MainButton.show();
 });
 
 // ------------------3--------------------
 
+let item3 = " "
+let n_count3 = 0
+
+
 count3 = document.getElementById("count3");
-rbtn3 = document.getElementById("rbtn3");
-abtn3 = document.getElementById("abtn3");
-let item3 = " ";
-let n_count3 = 0;
-rbtn3.addEventListener("click", function () {
-    if (n_count3 > 0) {
-        count3.innerText = n_count3 -= 1;
-    }
+let rbtn3 = document.getElementById("rbtn3");
+let abtn3 = document.getElementById("abtn3");
 
-    count3.style.display = "inline-block";
-    tg.MainButton.setText("LAVASH");
-    tg.MainButton.show();
-});
-
-
-
-abtn3.addEventListener("click", function (){
+abtn3.addEventListener("click", function () {
     count3.innerText = n_count3 += 1;
     count3.style.display = "inline-block";
-    tg.MainButton.setText("LAVASH");
+    tg.MainButton.setText("Lavash");
+    tg.MainButton.show();
+    item3 = "Burger/3/" + count1.innerText;
+
+});
+rbtn3.addEventListener("click", function () {
+    if (n_count3 > 0) {
+        count1.innerText = n_count3 -= 1;
+    }
+    count3.style.display = "inline-block";
+    item3 = "Lavash/3/" + count3;
+    tg.MainButton.setText("Lavash");
     tg.MainButton.show();
 });
 
 // -------------------4-------------------
 
+let item4 = " "
+let n_count4 = 0
+
+
 count4 = document.getElementById("count4");
-rbtn4 = document.getElementById("rbtn4");
-abtn4 = document.getElementById("abtn4");
-let item4 = " ";
-let n_count4 = 0;
+let rbtn4 = document.getElementById("rbtn4");
+let abtn4 = document.getElementById("abtn4");
+
+abtn4.addEventListener("click", function () {
+    count4.innerText = n_count4 += 1;
+    count4.style.display = "inline-block";
+    tg.MainButton.setText("Pizza");
+    tg.MainButton.show();
+    item4 = "Pizza/3/" + count4.innerText;
+
+});
 rbtn4.addEventListener("click", function () {
     if (n_count4 > 0) {
         count4.innerText = n_count4 -= 1;
     }
-
     count4.style.display = "inline-block";
-    tg.MainButton.setText("PIZZA");
+    item4 = "Pizza/3/" + count4;
+    tg.MainButton.setText("Pizza");
     tg.MainButton.show();
 });
-
-
-
-abtn4.addEventListener("click", function (){
-    count4.innerText = n_count4 += 1;
-    count4.style.display = "inline-block";
-    tg.MainButton.setText("PIZZA");
-    tg.MainButton.show();
-});
-
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
