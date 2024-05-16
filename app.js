@@ -6,11 +6,11 @@ tg.MainButton.color = "#FC3005"
 
 // -----------------------1--------------------------
 
-let item1 = " "
+let item1 = ""
 let n_count1 = 0
 
 
-count1 = document.getElementById("count1");
+let count1 = document.getElementById("count1");
 let rbtn1 = document.getElementById("rbtn1");
 let abtn1 = document.getElementById("abtn1");
 
@@ -27,96 +27,100 @@ rbtn1.addEventListener("click", function () {
         count1.innerText = n_count1 -= 1;
     }
     count1.style.display = "inline-block";
-    item1 = "Burger/3/" + count1;
+    item1 = "Burger/3/" + count1.innerText;
     tg.MainButton.setText("Burger");
     tg.MainButton.show();
 });
 // ------------------2--------------------
 
-let item2 = " "
-let n_count2 = 0
-
-
 count2 = document.getElementById("count2");
-let rbtn2 = document.getElementById("rbtn2");
-let abtn2 = document.getElementById("abtn2");
-
-abtn2.addEventListener("click", function () {
-    count2.innerText = n_count2 += 1;
-    count2.style.display = "inline-block";
-    tg.MainButton.setText("KFS");
-    tg.MainButton.show();
-    item2 = "KFS/3/" + count2.innerText;
-
-});
+rbtn2 = document.getElementById("rbtn2");
+abtn2 = document.getElementById("abtn2");
+let item2 = "";
+let n_count2 = 0;
 rbtn2.addEventListener("click", function () {
     if (n_count2 > 0) {
         count2.innerText = n_count2 -= 1;
     }
+
     count2.style.display = "inline-block";
-    item2 = "KFS/3/" + count2;
-    tg.MainButton.setText("KFS");
+    item2 = "KFC/10/" + count2.innerText;
+    tg.MainButton.setText("KFC");
+    tg.MainButton.show();
+});
+
+
+
+abtn2.addEventListener("click", function (){
+    count2.innerText = n_count2 += 1;
+    count2.style.display = "inline-block";
+    item2 = "KFC/10/" + count2.innerText;
+    tg.MainButton.setText("KFC");
     tg.MainButton.show();
 });
 
 // ------------------3--------------------
 
-let item3 = " "
-let n_count3 = 0
-
-
 count3 = document.getElementById("count3");
-let rbtn3 = document.getElementById("rbtn3");
-let abtn3 = document.getElementById("abtn3");
-
-abtn3.addEventListener("click", function () {
-    count3.innerText = n_count3 += 1;
-    count3.style.display = "inline-block";
-    tg.MainButton.setText("Lavash");
-    tg.MainButton.show();
-    item3 = "Burger/3/" + count1.innerText;
-
-});
+rbtn3 = document.getElementById("rbtn3");
+abtn3 = document.getElementById("abtn3");
+let item3 = "";
+let n_count3 = 0;
 rbtn3.addEventListener("click", function () {
     if (n_count3 > 0) {
-        count1.innerText = n_count3 -= 1;
+        count3.innerText = n_count3 -= 1;
     }
+
     count3.style.display = "inline-block";
-    item3 = "Lavash/3/" + count3;
-    tg.MainButton.setText("Lavash");
+    item3 = "LAVASH/4/" + count3.innerText;
+
+    tg.MainButton.setText("LAVASH");
+    tg.MainButton.show();
+});
+
+
+
+abtn3.addEventListener("click", function (){
+    count3.innerText = n_count3 += 1;
+    count3.style.display = "inline-block";
+    item3 = "LAVASH/4/" + count3.innerText;
+    tg.MainButton.setText("LAVASH");
     tg.MainButton.show();
 });
 
 // -------------------4-------------------
 
-let item4 = " "
-let n_count4 = 0
-
-
 count4 = document.getElementById("count4");
-let rbtn4 = document.getElementById("rbtn4");
-let abtn4 = document.getElementById("abtn4");
-
-abtn4.addEventListener("click", function () {
-    count4.innerText = n_count4 += 1;
-    count4.style.display = "inline-block";
-    tg.MainButton.setText("Pizza");
-    tg.MainButton.show();
-    item4 = "Pizza/3/" + count4.innerText;
-
-});
+rbtn4 = document.getElementById("rbtn4");
+abtn4 = document.getElementById("abtn4");
+let item4 = "";
+let n_count4 = 0;
 rbtn4.addEventListener("click", function () {
     if (n_count4 > 0) {
         count4.innerText = n_count4 -= 1;
     }
+
     count4.style.display = "inline-block";
-    item4 = "Pizza/3/" + count4;
-    tg.MainButton.setText("Pizza");
+    item4 = "PIZZA/5/" + count4.innerText;
+
+    tg.MainButton.setText("PIZZA");
     tg.MainButton.show();
 });
 
 
+
+abtn4.addEventListener("click", function (){
+    count4.innerText = n_count4 += 1;
+    count4.style.display = "inline-block";
+    item4 = "PIZZA/5/" + count4.innerText;
+
+    tg.MainButton.setText("PIZZA");
+    tg.MainButton.show();
+});
+
+
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4;
+    data = item1 + "|" + item2 +  "|" + item3 + "|" + item4
     tg.sendData(data);
 });
