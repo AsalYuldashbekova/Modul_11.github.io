@@ -1,8 +1,8 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-tg.MainButton.textColor = "#ADFF2F"
-tg.MainButton.color = "#FFFF00"
+tg.MainButton.textColor = "#FF0000"
+tg.MainButton.color = "#000000"
 
 // -----------------------1--------------------------
 
@@ -81,7 +81,7 @@ rbtn3.addEventListener("click", function () {
 abtn3.addEventListener("click", function () {
     count3.innerText = n_count3 += 1;
     count3.style.display = "inline-block";
-    item3 = "Kompyuterlar nurini qaytaruvchi maxsus ko'zoynak/40000/" + count3.innerText;
+    item3 = "Kompyuterlar nurini qaytaruvchi maxsus ko'zoynak/400000/" + count3.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -99,7 +99,7 @@ rbtn4.addEventListener("click", function () {
     }
 
     count4.style.display = "inline-block";
-    item4 = "Ko'z qamashishiga qarshi maxsus ko'zoynak/50000/" + count4.innerText;
+    item4 = "Ko'z qamashishiga qarshi maxsus ko'zoynak/500000/" + count4.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -109,7 +109,7 @@ rbtn4.addEventListener("click", function () {
 abtn4.addEventListener("click", function () {
     count4.innerText = n_count4 += 1;
     count4.style.display = "inline-block";
-    item4 = "Ko'z qamashishiga qarshi maxsus ko'zoynak/50000/" + count4.innerText;
+    item4 = "Ko'z qamashishiga qarshi maxsus ko'zoynak/500000/" + count4.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
