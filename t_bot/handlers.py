@@ -26,7 +26,7 @@ async def order(msg: Message):
     await bot.send_invoice(
         chat_id=msg.chat.id,
         title="Telegram bot orqali to'lov!",
-        description="Telegram bot orqali to'lov qilishni o'rganyammiz!",
+        description="Telegram bot orqali to'lov qilishni o'rganyapmiz!",
         provider_token=PROVIDER_TOKEN,
         currency="UZS",
         payload="Ichki malumot",
