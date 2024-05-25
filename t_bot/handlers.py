@@ -16,7 +16,9 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: Message):
-    await msg.answer("Assalomu aleykum", reply_markup=app_kb)
+    await msg.answer("Assalomu aleykum hurmatli foydalanuvchi! /n"
+                     "Ushbu bot sizning talablaringizga mos bo'lgan ko'zoynaklarni topish uchun yordam beradi deb o'ylaymiz./n"
+                     "Tanlovingiz uchu rahmat!", reply_markup=app_kb)
 
 
 @dp.message(Command("pay"))

@@ -1,8 +1,8 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF"
-tg.MainButton.color = "#FC3005"
+tg.MainButton.textColor = "#ADFF2F"
+tg.MainButton.color = "#FFFF00"
 
 // -----------------------1--------------------------
 
