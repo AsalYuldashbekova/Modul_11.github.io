@@ -19,7 +19,7 @@ abtn1.addEventListener("click", function () {
     count1.style.display = "inline-block";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    item1 = "Burger/12000/" + count1.innerText;
+    item1 = "Romeo ko'zoynagi/12000/" + count1.innerText;
 
 });
 rbtn1.addEventListener("click", function () {
@@ -27,7 +27,7 @@ rbtn1.addEventListener("click", function () {
         count1.innerText = n_count1 -= 1;
     }
     count1.style.display = "inline-block";
-    item1 = "Burger/12000/" + count1.innerText;
+    item1 = "Romeo ko'zoynagi/12000/" + count1.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });

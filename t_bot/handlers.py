@@ -16,7 +16,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: Message):
-    await msg.answer("Salom", reply_markup=app_kb)
+    await msg.answer("Assalomu aleykum", reply_markup=app_kb)
 
 
 @dp.message(Command("pay"))
@@ -40,7 +40,7 @@ async def pre_checkout_query(checkout_query: PreCheckoutQuery):
     await bot.answer_pre_checkout_query(checkout_query.id, ok=True)
 
 
-@dp.message(F.func(lambda msg: msg.web_app_data.data))
+@dp.message(F.func(lambda msg: msg.web_app_data.data if msg.web_app_data else None))
 async def get_btn(msg: Message):
     text = msg.web_app_data.data
     product_data = text.split("|")
