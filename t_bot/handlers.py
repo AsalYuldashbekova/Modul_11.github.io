@@ -69,7 +69,7 @@ async def get_btn(msg: Message):
             label=f"{product['Nomi']} ({product['Quantity']})",
             amount=product["Price"] * product["Quantity"] * 100
         ) for product in products.values()]
-    ),
+    )
 
     # @dp.message(F.func(lambda msg: msg.web_app_data.data))
     # async def get_btn(msg: Message):
