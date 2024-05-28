@@ -134,9 +134,36 @@ rbtn5.addEventListener("click", function () {
 
 
 abtn5.addEventListener("click", function () {
-    count5.innerText = n_count2 += 1;
+    count5.innerText = n_count5 += 1;
     count5.style.display = "inline-block";
     item5 = "Optik ko`zoynak/120000/" + count5.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+//--------------------6----------------------
+
+count6 = document.getElementById("count6");
+rbtn6 = document.getElementById("rbtn6");
+abtn6 = document.getElementById("abtn6");
+let item6 = "";
+let n_count6 = 0;
+rbtn6.addEventListener("click", function () {
+    if (n_count6 > 0) {
+        count6.innerText = n_count6 -= 1;
+    }
+
+    count6.style.display = "inline-block";
+    item6 = "Asigmatik ko`zoynak/150000/" + count6.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn6.addEventListener("click", function () {
+    count6.innerText = n_count6 += 1;
+    count6.style.display = "inline-block";
+    item6 = "Asigmatik ko`zoynak/150000/" + count6.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
