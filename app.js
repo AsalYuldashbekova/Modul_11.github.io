@@ -189,10 +189,38 @@ rbtn7.addEventListener("click", function () {
 });
 
 
-abtn6.addEventListener("click", function () {
-    count6.innerText = n_count6 += 1;
-    count6.style.display = "inline-block";
-    item6 = "Asigmatik ko`zoynak/150000/" + count6.innerText;
+abtn7.addEventListener("click", function () {
+    count7.innerText = n_count7 += 1;
+    count7.style.display = "inline-block";
+    item7 = "Mi kompyuter ko`zoynagi/160000/" + count7.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+//---------------------------8-----------------------------
+
+count8 = document.getElementById("count8");
+rbtn8 = document.getElementById("rbtn8");
+abtn8 = document.getElementById("abtn8");
+let item8 = "";
+let n_count8 = 0;
+rbtn8.addEventListener("click", function () {
+    if (n_count8 > 0) {
+        count8.innerText = n_count8 -= 1;
+    }
+
+    count8.style.display = "inline-block";
+    item8 = "Magna aqlli ko`zoynagi/200000/" + count8.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn8.addEventListener("click", function () {
+    count8.innerText = n_count8 += 1;
+    count8.style.display = "inline-block";
+    item8 = "Asigmatik ko`zoynak/150000/" + count8.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
