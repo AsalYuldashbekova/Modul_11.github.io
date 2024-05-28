@@ -1,8 +1,8 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-tg.MainButton.textColor = "#FF0000"
-tg.MainButton.color = "#000000"
+tg.MainButton.textColor = "#000000"
+tg.MainButton.color = "#FF0000"
 
 // -----------------------1--------------------------
 
@@ -115,6 +115,31 @@ abtn4.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
+//---------------------5------------------//
+count5 = document.getElementById("count5");
+rbtn5 = document.getElementById("rbtn5");
+abtn5 = document.getElementById("abtn5");
+let item5 = "";
+let n_count5 = 0;
+rbtn5.addEventListener("click", function () {
+    if (n_count5 > 0) {
+        count5.innerText = n_count5 -= 1;
+    }
+
+    count5.style.display = "inline-block";
+    item5 = "Optik ko`zoynak/120000/" + count5.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn5.addEventListener("click", function () {
+    count5.innerText = n_count2 += 1;
+    count5.style.display = "inline-block";
+    item5 = "Optik ko`zoynak/120000/" + count5.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
     data = item1 + "|" + item2 + "|" + item3 + "|" + item4
