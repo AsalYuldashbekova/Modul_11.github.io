@@ -17,7 +17,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def start(msg: Message):
     await msg.answer("Assalomu aleykum hurmatli foydalanuvchi!"
-                     " Ushbu bot VITO optika do'konidagi ko'zoynaklarga buyutrma berish uchun qulay hisoblanadi."
+                     " Ushbu bot VITO optika do'konidagi ko'zoynaklardan xohlaganingizni buyurtma berishingiz uchun qulaydir."
                      " Tanlovingiz uchu rahmat!", reply_markup=app_kb)
 
 
